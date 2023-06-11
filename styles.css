@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root{
+    --background1: #f2f2f2;
+    --text-color:#212121;
+}
+
+body :not(header){
+    max-width: 90%; 
+    margin: auto;
+}
+
+
+header{
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+#header-container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 3vw;
+    position: relative;
+    left: 10vh;
+}
+
+
+
+
+#logo img{
+    max-height: 50px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#header-container a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+
+#header-container a:hover:not(:first-child){
+    border-bottom: 1px solid var(--text-color);
+}
+
+
+header button{
+    border:none;
+    background-color: white;
+    font-size: 15px;
+ 
+}
+
+header button svg{
+    vertical-align: top;
+    
+}
+
+header button:hover span{
+        border-bottom: 1px solid var(--text-color);
+}
+
+
+#banner{
+    height: 55vh;
+    background-image: url("https://img5.goodfon.com/original/2918x1918/1/4f/volvo-ex90-suv-electric-vehicle.jpg");
+    background-position: center;
+    background-size:cover;
+    margin-top: 4vh;
+}
+
+#banner h1{
+    font-size: 3rem;
+    color: white;
+    background-color: black;
+    display: inline;
+    border-radius: 20px;
+    padding: 15px;
+    opacity: 0.7;
+    position: relative;
+    left: 0.2vw;
+    top: 6vh;
+    cursor: pointer;
+}
+
+#trending-content{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 1vw;
+}
+
+.trending-content-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 35vh;
+    width: 15vw;
+    border: 1px solid #e6e6e6;
+    box-shadow: inset 0 -2px 0 0 #e6e6e6;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.trending-content-block:hover{
+    transform: scale(1.1);
+}
+
+.trending-content-img{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trending-content-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+
+.trending-content-text{
+ font-size: 16px;
+ display: flex;
+ justify-content: start;
+ align-items: start;
+}
+
+#section-trending {
+    margin: 10vh auto;
+    width: 90%;
+}
+
+#section-trending h2{
+    font-size: 36px;
+    color: var(--text-color);
+    margin-bottom: 6vh;
+}
+
