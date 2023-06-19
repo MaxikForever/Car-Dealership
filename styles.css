@@ -29,11 +29,11 @@ header{
 
 #header-container{
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     gap: 3vw;
     position: relative;
-    left: 10vh;
+    
 }
 
 
@@ -48,6 +48,7 @@ header{
 #header-container a{
     text-decoration: none;
     color: var(--text-color);
+    font-size: 1.2vw;
 }
 
 
@@ -56,7 +57,7 @@ header{
 }
 
 
-header button{
+#menu-btn{
     border:none;
     background-color: white;
     font-size: 15px;
@@ -302,7 +303,8 @@ margin-bottom: 4vh;
     justify-content: space-between;
     align-items: start;
     padding: 0 4vw;
-    height: 45vh;
+    height: auto;
+    padding: 20px;
     box-shadow: 0px 7px 0px -6px rgba(0, 0, 0, 0.3);
     
 }
@@ -440,6 +442,7 @@ width: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin: 0;
     gap: 10px;
     position: relative;
@@ -464,9 +467,216 @@ width: 250px;
  padding-bottom: 1rem;
  font-weight: 200;
  font-size: 14px;
+ text-align: center;
 }
 
 #global-copyright-container ul li{
     list-style: none;
 }
+
+#burger-menu{
+    position: relative;
+    top: 20vh;
+    max-width: 400px;
+    background-color:white ;
+    padding: 2rem 4rem;
+    box-shadow:  0px 0px 6px rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+#burger-menu button{
+    display: block;
+}
+
+#burger-menu span{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+
+
+ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+ul li{
+    list-style: none;
+    font-size: 18px;
+    margin-top: 1rem;
+}
+
+ul li a img{
+    height: 20px;
+    vertical-align: top;
+}
+
+ul li a:hover{
+   text-decoration: underline;
+   color: #532380;
+}
+
+#sign-in{
+    margin-top: 20px;
+   width: 400px;
+   border: 2px solid #532380; 
+   padding: 10px 20px;
+   border-radius: 10px;
+   color: #532380;
+   font-weight: 800;
+
+}
+
+#sign-in:hover{
+    background-color: #250858;
+    color: white;
+}
+
+
+#create-acc{
+   margin-top: 20px;
+   width: 400px;
+   padding: 10px 20px;
+   border-radius: 10px;
+   color: white;
+   font-weight: 800;
+   background-color: #532380;
+}
+
+#create-acc:hover{
+    background-color: #250858;
+}
+
+#burger-menu {
+    display: none;
+  }
+
+
+
+  #menu-container{
+    margin: 0;
+    position: relative;
+    right: 2vw;
+  }
+
+#menu-container:hover #burger-menu{
+    display: block;
+}
+
+#menu-container:hover #menu-btn{
+    display: none;
+}
+
+
+
+
+#media-menu{
+    display: none;
+}
+
+
+@media (max-width: 1200px){
+
+    #burger-menu{
+        top: 15vh;
+    }
+
+    #header-container a {
+        font-size: 1.4vw;
+    }
+
+  
+
+}
+
+@media (max-width:1024px)
+{
+    #global-copyright{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #global-copyright-container{
+        display: flex;
+        justify-content: center;
+        align-items:center ;
+        padding-left: 100px;
+    }
+
+}
+
+
+@media (max-width:900px){
+    
+    #header-container a {
+        font-size: 1.6vw;
+    }
+}
+
+
+@media (max-width:768px){
+    
+    #header-container a:not(:first-child) {
+        display: none;
+    }
+    #media-menu{
+        display: block;
+        font-size: 8px;
+    }
+
+    #burger-menu{
+        top: 27vh;
+    }
+
+    #trending-content{
+        grid-template-columns: repeat(3,1fr);
+        gap: 1vw;
+    }
+
+    .trending-content-block{
+        width: 26vw;
+    }
+    
+   #banner h1{
+    font-size: 20px;
+   }
+
+   #section-trending h2{
+    font-size: 25px;
+   }
+
+   #expert-reviews-header h2{
+    font-size: 25px;
+   }
+
+   #expert-reviews-header p{
+    font-size: 18px;
+   }
+
+    
+    #expert-reviews-content{
+        flex-wrap: wrap;
+    }
+
+    .author-expert img {
+        height: 20vh;
+    }
+
+    .author-expert{
+        margin: 0,auto;
+        bottom: 50px;
+    }
+
+    .expert-info h5{
+        font-size: 18px;
+    }
+
+    .expert-info p{
+        font-size: 16px;
+    }
+
+}
+
 
